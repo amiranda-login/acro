@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'UTMAvo';
+    src: url('../fonts/UTMAvo.eot');
+    src: local('UTMAvo'), url('../fonts/UTMAvo.woff') format('woff'), url('../fonts/UTMAvo.ttf') format('truetype');
+}
+
+body{
+    font-family: 'UTMAvo' !important;
+}
+
 .cuadro{
     width: 50%;
     height: 50%;
@@ -6,4 +16,8 @@
 
 .cabeza{
     background-color: red;
+}
+
+h4{
+    color: #a7a9ac;
 }
