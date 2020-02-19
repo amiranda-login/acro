@@ -39,3 +39,13 @@ h4{
     color: white;
     
 }
+
+.img-1{
+    width: 100%;
+    max-height: 168px;
+}
+
+.page{
+    text-align: justify;
+    border: 1px solid #e2e2e2;
+}
