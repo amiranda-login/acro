@@ -21,3 +21,20 @@ body{
 h4{
     color: #a7a9ac;
 }
+
+.cuadro{
+    background-color: #105A8F; 
+    color:white;
+    border: 1px solid #e2e2e2;
+    border-radius: 50px;
+    width: 75%;
+}
+
+.cuadro1{
+    border: 1px solid #e2e2e2;
+    border-radius: 50px;
+    padding: 2%;
+    text-align: justify;
+    background-color: #286A9B;
+    color: white;
+}
