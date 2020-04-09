@@ -11,7 +11,7 @@ body{
 .cuadro{
     width: 50%;
     height: 50%;
-    background-color: #5AAD57;
+   /* background-color: #AEB6BF;*/
 }
 
 .cabeza{
@@ -19,13 +19,14 @@ body{
 }
 
 h4{
-    color: #a7a9ac;
+   /* color: #a7a9ac;*/
+     color: #0063D3;
 }
 
 .cuadro{
-    background-color: #105A8F; 
-    color:white;
-    border: 1px solid #e2e2e2;
+  /*  background-color: #AEB6BF; */
+    color:black;
+    border: 3px solid #6C6B69 ;
     border-radius: 50px;
     width: 75%;
 }
@@ -36,7 +37,7 @@ h4{
     padding: 2%;
     text-align: justify;
     background-color: #286A9B;
-    color: white;
+    color: black;
     
 }
 
@@ -48,4 +49,21 @@ h4{
 .page{
     text-align: justify;
     border: 1px solid #e2e2e2;
+}
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+ 
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
