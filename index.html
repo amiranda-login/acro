@@ -11,11 +11,12 @@
     <title>Acro</title>
     <link rel="stylesheet" type="text/css" href="./css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="./css/materialdesignicons.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/intlTelInput.min.css">
     <link rel="stylesheet" type="text/css" href="./css/pagina.css?v=2">
 </head>
 <body>
 
-      <nav style="position: fixed;top: 2px;background-color: white ;z-index: 999">
+      <nav style="position: fixed;top: 0px;background-color: white ;z-index: 999">
     <div class="nav-wrapper">
       <a  class="brand-logo"><img src="./img/logos/LogoAcro2.jpg" width="130px" height="60px"></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -74,7 +75,7 @@
 
         <a href="https://likedin.com" target="_new" class="btn-floating center tooltipped" data-position="bottom" data-tooltip="Linked IN"><i class="mdi mdi-linkedin mdi-24px"></i></a>
 
-        <a href="https://wa.me/506" target="_new" class="green btn-floating center tooltipped" data-position="bottom" data-tooltip="Whatsapp"><i class="mdi mdi-whatsapp mdi-24px"></i></a>
+        <a href="https://wa.me/506" target="_new" class="green btn-floating center tooltipped hide" data-position="bottom" data-tooltip="Whatsapp"><i class="mdi mdi-whatsapp mdi-24px"></i></a>
        <!--  <br>
         <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div> -->
         
@@ -275,15 +276,81 @@
       <div class="row container" style="margin-top: 6%">
         <h4 class="header" style="color:black">PROYECTOS</h4>
         <p class="grey-text text-darken-3 lighten-3">Nuestros Proyectos contemplan las áreas de iluminación, potencia, sonido, alarmas contra incendio, cableado estructurado, sistema de agua potable, aguas negras, aguas pluviales, aire acondicionado y extracción, cámaras cctv, aire comprimido y sistema de gas LP.</p>
-         <div class="carousel">
-            <a class="carousel-item" href="#one!"><img src="img/carruceles/2/carrucel1.png"></a>
-            <a class="carousel-item" href="#two!"><img src="img/carruceles/2/carrucel2.jpg"></a>
-            <a class="carousel-item" href="#three!"><img src="img/carruceles/2/carrucel13.jpg"></a>
-            <a class="carousel-item" href="#four!"><img src="img/carruceles/2/carrucel14.jpg"></a>
-            <a class="carousel-item" href="#five!"><img src="img/carruceles/2/carrucel15.jpg"></a>
-            <a class="carousel-item" href="#five!"><img src="img/carruceles/2/carrucel16.jpg"></a>
-           
+        
+        <div class="row">
+          <div class="col s3">
+            <a class="project" num="1" style="cursor: pointer;">Proyecto 1</a> <br>
+            <a class="project" num="2" style="cursor: pointer;">Proyecto 2</a> <br>
+            <a class="project" num="3" style="cursor: pointer;">Proyecto 3</a> <br>
           </div>
+
+          <div class="col s9 hide project-det" num="1" style="max-height: 60vh; border: 1px solid #e2e2e2; overflow-y: auto">
+            <h4 class="center">TITULO DEL PROYECTO</h4>
+            <hr>
+            <b>Fecha:</b> <span>dd/mm/yyyy</span>
+            <br>
+            <p>
+              Descripcion. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>  
+            
+            <div class="carousel center">
+              <a class="carousel-item" href="#one!"><img src="img/carruceles/2/carrucel1.png"></a>
+              <a class="carousel-item" href="#two!"><img src="img/carruceles/2/carrucel2.jpg"></a>
+              <a class="carousel-item" href="#three!"><img src="img/carruceles/2/carrucel13.jpg"></a>
+              <a class="carousel-item" href="#four!"><img src="img/carruceles/2/carrucel14.jpg"></a>
+              <a class="carousel-item" href="#five!"><img src="img/carruceles/2/carrucel15.jpg"></a>
+              <a class="carousel-item" href="#five!"><img src="img/carruceles/2/carrucel16.jpg"></a>
+            </div>
+
+          </div>
+
+          <div class="col s9 hide project-det" num="2" style="max-height: 60vh; border: 1px solid black; overflow-y: auto;">
+            <h4 class="center">TITULO DEL PROYECTO 2</h4>
+            <hr>
+            <b>Fecha:</b> <span>dd/mm/yyyy</span>
+            <br>
+            <p>
+              Descripcion. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>  
+            
+            <!-- <div class="carousel">
+             
+            </div> -->
+          
+          </div>
+
+          <div class="col s9 hide project-det" num="3" style="max-height: 60vh; border: 1px solid black; overflow-y: auto;">
+            <h4 class="center">TITULO DEL PROYECTO 3</h4>
+            <hr>
+            <b>Fecha:</b> <span>dd/mm/yyyy</span>
+            <br>
+            <p>
+              Descripcion. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>  
+            
+           <!--  <div class="carousel">
+             
+            </div> -->
+          
+          </div>
+
+        </div> 
+        
       </div>
 
 
@@ -293,100 +360,89 @@
         <div class="col m10 offset-m1 s12" style="margin-top: 6%">
             <h4 class="center-align" style="color:black">CONTÁCTENOS</h4>
             <div class="row">
-                <form class="col s12">
-                    <div class="row">
-                        <div class="input-field col m6 s12">
-                            <input id="first_name" type="text" class="validate">
-                            <label for="first_name">Nombre</label>
-                        </div>
-                        <div class="input-field col m6 s12">
-                            <input id="last_name" type="text" class="validate">
-                            <label for="last_name">Apellidos</label>
-                        </div>
+                <div class="input-field col s12">
+                    <i class="mdi mdi-24px mdi-account prefix"></i>
+                    <input id="first_name" type="text" class="validate">
+                    <label for="first_name">Nombre</label>
+                </div>
+                    <!-- <div class="input-field col m6 s12">
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Apellidos</label>
+                    </div> -->
+                <div class="input-field col s12">
+                    <i class="mdi mdi-24px mdi-email prefix"></i>
+                    <input id="email" type="email" class="validate" required>
+                    <label for="email">Email</label>
+                </div>
+                 <div class="input-field col s5">
+                    <input type="tel" placeholder="Telefono" id="phone" class="phone validate" style="width: 100%">
+                </div>
+                <div class="input-field col s12">
+                    <i class="mdi mdi-store prefix mdi-24px"></i>
+                    <input id="company" type="text" class="validate">
+                    <label for="company">Empresa</label>
+                </div>
+                <div class="input-field col s12">
+                  <i class="mdi mdi-comment mdi-24px prefix"></i>
+                  <textarea id="message" class="materialize-textarea validate" data-length="180"></textarea>
+                  <label for="message">Mensaje</label>
+                </div>
+                  
+                <div class="col s12 center-align">
+                  <span>Cómo se enteró de nosotros?</span>
+                  <br/>
+                </div>
+                <div class="col m3 s6 center-align">
+                  <p>
+                    <label>
+                      <input name="group1" type="radio" class="with-gap" id="google" value="1" />
+                      <span>Google</span>
+                    </label>
+                  </p>
+                </div>
+                <div class="col m3 s6 center-align">
+                 <p>
+                    <label>
+                      <input name="group1" type="radio" class="with-gap" id="rsoc" value="2" />
+                      <span>Redes Sociales</span>
+                    </label>
+                  </p>
+                </div>
+                <div class="col m3 s6 center-align">
+                 <p>
+                    <label>
+                      <input name="group1" type="radio" class="with-gap" id="refptp" value="3" />
+                      <span>Referencia</span>
+                    </label>
+                  </p>
+                </div>
+                <br> <br>
+                    <div class="input-field col s12">
+                      <span>Preferencia de Comunicación</span>
+                      <br/>
                     </div>
-                    <div class="row">
-                        <div class="input-field col m6 s12">
-                            <i class="mdi-content-mail prefix"></i>
-                            <input id="email" type="email" class="validate" required>
-                            <label for="email">Email</label>
-                        </div>
-                        <div class="input-field col m6 s12">
-                            <i class="mdi-maps-store-mall-directory prefix"></i>
-                            <input id="company" type="text" class="validate">
-                            <label for="company">Empresa</label>
-                        </div>
+                    <div class="col m4 s12 center-align">
+                      <p>
+                        <label>
+                          <input name="group2" type="checkbox" class="with-gap" id="corrcom" value="1" />
+                          <span>Correo</span>
+                        </label>
+                      </p>
                     </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                          <textarea id="message" class="materialize-textarea"></textarea>
-                          <label for="message">Mensaje</label>
-                        </div>
+                    <div class="col m4 s12 center-align">
+                      <p>
+                        <label>
+                          <input name="group2" type="checkbox" class="with-gap" id="callcom" value="2" />
+                          <span>Llamada</span>
+                        </label>
+                      </p>
                     </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                          <label for="budget">Budget</label>
-                          <br/>
-                        </div>
-                        <div class="input-field col s12">
-                            <select class="browser-default" id="budget">
-                              <option value="" selected disabled>Choose your option</option>
-                              <option value="1">&lt; $4000</option>
-                              <option value="2">$4000 - $9000</option>
-                              <option value="3">&gt; $9000</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                          <label>How Did You Find Us?</label>
-                          <br/>
-                        </div>
-                        <div class="input-field col m3 s6 center-align">
-                          <input name="group1" type="radio" id="google" />
-                          <label for="google">Google</label>
-                        </div>
-                        <div class="input-field col m3 s6 center-align">
-                          <input name="group1" type="radio" id="customer" />
-                          <label for="customer">Customer</label>
-                        </div>
-                        <div class="input-field col m3 s6 center-align">
-                          <input name="group1" type="radio" id="store" />
-                          <label for="store">Store</label>
-                        </div>
-                        <div class="input-field col m3 s6 center-align">
-                          <input name="group1" type="radio" id="other" />
-                          <label for="other">Other</label>
-                        </div>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                          <label>Communication Preferences</label>
-                          <br/>
-                        </div>
-                        <div class="input-field col m4 s12 center-align">
-                          <input name="group2" type="checkbox" id="emailComm" />
-                          <label for="emailComm">Email</label>
-                        </div>
-                        <div class="input-field col m4 s12 center-align">
-                          <input name="group2" type="checkbox" id="callComm" />
-                          <label for="callComm">Call Me</label>
-                        </div>
-                        <div class="input-field col m4 s12 center-align">
-                          <input name="group2" type="checkbox" id="newsletter" />
-                          <label for="newsletter">Newsletter</label>
-                        </div>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="row">
                         <div class="col m12">
-                         <p class="right-align"><button class="btn btn-large waves-effect waves-light" type="button" name="action">Send Message</button></p>
+                         <p class="right-align"><button class="btn btn-large waves-effect waves-light" type="button" id="snmail">Enviar Mensaje</button></p>
                         </div>
-                    </div>
-
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d245.51754715047485!2d-84.31117595272768!3d10.076066217311743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scr!4v1569455965296!5m2!1ses-419!2scr" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                </form>
             </div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d245.51754715047485!2d-84.31117595272768!3d10.076066217311743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scr!4v1569455965296!5m2!1ses-419!2scr" height="450" width="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         </div>
     </div>
 </div>
@@ -397,6 +453,7 @@
 
     <script src="./js/jquery.js"></script>
     <script src="./js/materialize.min.js"></script>
-    <script src="./js/pagina.js?v=2"></script>
+    <script src="./js/intlTelInput.min.js"></script>
+    <script src="./js/pagina.js?v=4"></script>
 </body>
 </html>
